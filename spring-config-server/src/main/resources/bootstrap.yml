@@ -1,0 +1,21 @@
+
+spring:
+  cloud:
+    config:
+      server:
+        bootstrap: true
+        git:
+          cloneOnStart: true
+          uri: https://github.com/charlie0905/sping-config
+
+
+      #uri: http://localhost:8080
+      
+  application:
+    name: client-config
+    
+
+  profiles:
+    active:
+    - development
+
